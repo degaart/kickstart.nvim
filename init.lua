@@ -1026,5 +1026,22 @@ require('lazy').setup({
   },
 })
 
+-- NOTE: degaart neovide configuration
+if vim.g.neovide then
+  vim.o.guifont = 'Cascadia Mono:h11'
+  vim.g.neovide_position_animation_length = 0.1
+  vim.g.neovide_scroll_animation_length = 0.1
+  vim.g.neovide_hide_mouse_when_typing = true
+  vim.g.neovide_theme = 'dark'
+  vim.g.neovide_remember_window_size = false
+  vim.g.neovide_input_ime = false
+  vim.g.neovide_cursor_animation_length = 0
+  vim.g.neovide_cursor_short_animation_length = 0
+  vim.g.neovide_cursor_trail_size = 0
+  vim.g.neovide_cursor_animate_in_insert_mode = false
+  vim.g.neovide_cursor_animate_command_line = false
+  vim.g.neovide_cursor_vfx_mode = ''
+end
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
