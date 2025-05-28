@@ -217,6 +217,8 @@ vim.keymap.set('n', '<leader>o', '<cmd>copen<CR>')
 vim.keymap.set('n', '<leader>c', '<cmd>cclose<CR>')
 vim.keymap.set('n', '<F7>', '<cmd>make<CR>')
 vim.keymap.set('n', '<F5>', '<cmd>make run<CR>')
+vim.keymap.set('n', '<S-Insert>', '"+p')
+vim.keymap.set('i', '<S-Insert>', '<C-r>+')
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
