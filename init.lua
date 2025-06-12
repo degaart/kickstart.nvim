@@ -170,6 +170,7 @@ vim.o.confirm = true
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 vim.o.expandtab = true
+vim.o.wrap = false
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -217,6 +218,8 @@ vim.keymap.set('n', '<leader>N', '<cmd>cnext<CR>')
 vim.keymap.set('n', '<leader>P', '<cmd>cprevious<CR>')
 vim.keymap.set('n', '<leader>o', '<cmd>copen<CR>')
 vim.keymap.set('n', '<leader>c', '<cmd>cclose<CR>')
+vim.keymap.set('n', ',dn', vim.diagnostic.goto_next)
+vim.keymap.set('n', ',dp', vim.diagnostic.goto_prev)
 vim.keymap.set('n', '<F7>', '<cmd>make<CR>')
 vim.keymap.set('n', '<F5>', '<cmd>make run<CR>')
 vim.keymap.set('n', '<S-Insert>', '"+p')
